@@ -9,7 +9,7 @@
     <h3>Создать организацию</h3>
     <form class="form-group" method="post">
         {% csrf_token %}
-        {{ form.as_h4 }}
+        {{ form.as_p }}
         <input type="submit" value="Сохранить">
     </form>
     <a href="{% url 'organization_list' %}">Назад</a>

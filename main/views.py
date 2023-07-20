@@ -24,7 +24,7 @@ class OrganizationCreateView(CreateView):
     success_url = reverse_lazy('organization_list')
 
 
-class OrganizationDeleteView(DetailView):
+class OrganizationDeleteView(DeleteView):
     model = Organization
     template_name = 'delete_organization.html'
     success_url = reverse_lazy('organization_list')
